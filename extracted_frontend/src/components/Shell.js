@@ -16,8 +16,16 @@ const NAV = [
 ];
 
 export const Logo = ({ className = "" }) => (
-  <div className={`flex items-center gap-3 ${className}`}>
-    <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden>
+  <a
+    href="/"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/";
+    }}
+    title="Back to CampusLoop Landing Page"
+    className={`flex items-center gap-3 cursor-pointer select-none text-inherit no-underline group hover:opacity-90 ${className}`}
+  >
+    <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden className="transition-transform group-hover:scale-105">
       <rect x="1" y="1" width="30" height="30" fill="none" stroke={C.line} />
       <path d="M8 16a8 8 0 1 1 8 8" fill="none" stroke={C.volt} strokeWidth="3" />
       <rect x="6" y="20" width="6" height="6" fill={C.volt} />
@@ -25,7 +33,7 @@ export const Logo = ({ className = "" }) => (
     <span className="font-display font-bold text-xl tracking-tight">
       Campus<span className="text-volt">Loop</span>
     </span>
-  </div>
+  </a>
 );
 
 function useClock() {

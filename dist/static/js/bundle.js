@@ -515,12 +515,18 @@ const NAV = [{
 }];
 const Logo = ({
   className = ""
-}) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-  className: `flex items-center gap-3 ${className}`,
+}) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("a", {
+  href: "/",
+  onClick: e => {
+    e.preventDefault();
+    window.location.href = "/";
+  },
+  title: "Back to CampusLoop Landing Page",
+  className: `flex items-center gap-3 cursor-pointer select-none text-inherit no-underline group hover:opacity-90 ${className}`,
   "x-file-name": "Shell",
   "x-line-number": "19",
   "x-column": "2",
-  "x-component": "div",
+  "x-component": "a",
   "x-id": "Shell_19_2",
   "x-dynamic": "false",
   children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("svg", {
