@@ -114,8 +114,11 @@ export default function Roi() {
               ))}
             </Panel>
           </div>
-          {/* Section 7 Transparent Math & Methodology Box */}
-          <Panel className="p-5 sm:p-6 border-line bg-ink" data-testid="methodology-box">
+      </div>
+
+      {/* Section 7 Transparent Math & Methodology Box */}
+      <div className="mt-4 space-y-4">
+        <Panel className="p-5 sm:p-6 border-line bg-ink" data-testid="methodology-box">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div>
                 <Overline>Section 7 / Transparent Impact Math</Overline>

@@ -8438,7 +8438,7 @@ function Roi() {
         lineNumber: 66,
         columnNumber: 9
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)(_components_kit__WEBPACK_IMPORTED_MODULE_9__.Panel, {
-        className: "p-5 sm:p-6 border-line bg-ink mt-4",
+        className: "xl:col-span-2 col-span-full p-5 sm:p-6 border border-line bg-ink mt-4",
         "data-testid": "methodology-box",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
           className: "flex flex-wrap items-center justify-between gap-3 mb-4",
@@ -8454,59 +8454,104 @@ function Roi() {
             children: "Audited Equations"
           }, void 0, false)]
         }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-          className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-mono",
+          className: "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-            className: "border border-line p-3 bg-surface",
+            className: "border border-line p-4 bg-surface flex flex-col justify-between hover:border-volt/30 transition-colors",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-              className: "text-volt font-bold",
-              children: "EQ 01 \u2022 LANDFILL DIVERSION"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("code", {
-              className: "text-txt block mt-1",
-              children: "M_div = M_tot Ã— S_acc Ã— (1 - C_rate)"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
-              className: "text-mute mt-1 font-sans text-[11px]",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "flex items-center justify-between gap-2 mb-2 font-mono",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-volt font-bold text-xs tracking-wider",
+                  children: "EQ 01"
+                }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-[10px] uppercase text-mute tracking-widest",
+                  children: "DIVERSION"
+                }, void 0, false)]
+              }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "text-sm font-semibold text-txt mb-2 font-sans",
+                children: "Landfill Mass Diversion"
+              }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "bg-ink border border-line/80 px-3 py-2 text-txt font-mono text-xs whitespace-nowrap overflow-x-auto mb-3 select-all tracking-wide",
+                children: "M_div = M_tot \u00D7 S_acc \u00D7 (1 \u2212 C_rate)"
+              }, void 0, false)]
+            }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
+              className: "text-mute font-sans text-xs leading-relaxed",
               children: "Net segregated mass successfully diverted, discounted by contamination rejection rate."
             }, void 0, false)]
           }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-            className: "border border-line p-3 bg-surface",
+            className: "border border-line p-4 bg-surface flex flex-col justify-between hover:border-volt/30 transition-colors",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-              className: "text-volt font-bold",
-              children: "EQ 02 \u2022 ROUTE REDUCTION"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("code", {
-              className: "text-txt block mt-1",
-              children: "\u0394Dist = D_fixed - D_dynamic(Fill \u2265 70%)"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
-              className: "text-mute mt-1 font-sans text-[11px]",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "flex items-center justify-between gap-2 mb-2 font-mono",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-volt font-bold text-xs tracking-wider",
+                  children: "EQ 02"
+                }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-[10px] uppercase text-mute tracking-widest",
+                  children: "ROUTE"
+                }, void 0, false)]
+              }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "text-sm font-semibold text-txt mb-2 font-sans",
+                children: "Route Fuel Reduction"
+              }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "bg-ink border border-line/80 px-3 py-2 text-txt font-mono text-xs whitespace-nowrap overflow-x-auto mb-3 select-all tracking-wide",
+                children: "\u0394Dist = D_fixed \u2212 D_dynamic(Fill \u2265 70%)"
+              }, void 0, false)]
+            }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
+              className: "text-mute font-sans text-xs leading-relaxed",
               children: "Campus collection carts only visit full bins, reducing vehicle emissions and battery cycles by ~38%."
             }, void 0, false)]
           }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-            className: "border border-line p-3 bg-surface",
+            className: "border border-line p-4 bg-surface flex flex-col justify-between hover:border-volt/30 transition-colors",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-              className: "text-volt font-bold",
-              children: "EQ 03 \u2022 CAPEX EFFICIENCY"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("code", {
-              className: "text-txt block mt-1",
-              children: "Capex_QR = N_bins \u00D7 \u20B915 vs \u20B91,500 IoT"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
-              className: "text-mute mt-1 font-sans text-[11px]",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "flex items-center justify-between gap-2 mb-2 font-mono",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-volt font-bold text-xs tracking-wider",
+                  children: "EQ 03"
+                }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-[10px] uppercase text-mute tracking-widest",
+                  children: "CAPEX"
+                }, void 0, false)]
+              }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "text-sm font-semibold text-txt mb-2 font-sans",
+                children: "Capex Efficiency"
+              }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "bg-ink border border-line/80 px-3 py-2 text-txt font-mono text-xs whitespace-nowrap overflow-x-auto mb-3 select-all tracking-wide",
+                children: "Capex_QR = N_bins \u00D7 \u20B915 vs \u20B91,500 IoT"
+              }, void 0, false)]
+            }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
+              className: "text-mute font-sans text-xs leading-relaxed",
               children: "100x lower capex than ultrasonic hardware; selective IoT deployment only at high-density hubs."
             }, void 0, false)]
           }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-            className: "border border-line p-3 bg-surface",
+            className: "border border-line p-4 bg-surface flex flex-col justify-between hover:border-volt/30 transition-colors",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-              className: "text-volt font-bold",
-              children: "EQ 04 \u2022 NET VALUE CAPTURE"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("code", {
-              className: "text-txt block mt-1",
-              children: "Net = Î£(M_cat Ã— P_cat) + TippingSaved - Opex"
-            }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
-              className: "text-mute mt-1 font-sans text-[11px]",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "flex items-center justify-between gap-2 mb-2 font-mono",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-volt font-bold text-xs tracking-wider",
+                  children: "EQ 04"
+                }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+                  className: "text-[10px] uppercase text-mute tracking-widest",
+                  children: "VALUE"
+                }, void 0, false)]
+              }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "text-sm font-semibold text-txt mb-2 font-sans",
+                children: "Net Value Capture"
+              }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+                className: "bg-ink border border-line/80 px-3 py-2 text-txt font-mono text-xs whitespace-nowrap overflow-x-auto mb-3 select-all tracking-wide",
+                children: "Net = \u03A3(M_cat \u00D7 P_cat) + TippingSaved \u2212 Opex"
+              }, void 0, false)]
+            }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("p", {
+              className: "text-mute font-sans text-xs leading-relaxed",
               children: "Material exchange revenue plus municipal tipping fee savings minus minimal cloud server costs."
             }, void 0, false)]
           }, void 0, true)]
         }, void 0, true)]
+        }, void 0, true)]
       }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)(_components_kit__WEBPACK_IMPORTED_MODULE_9__.Panel, {
-        className: "p-5 sm:p-6 border-line bg-ink mt-4",
+        className: "xl:col-span-2 col-span-full p-5 sm:p-6 border border-line bg-ink mt-4",
         "data-testid": "implementation-roadmap",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
           className: "flex flex-wrap items-center justify-between gap-3 mb-4",
@@ -8561,14 +8606,26 @@ function Roi() {
             }, void 0, false)]
           }, void 0, true)]
         }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
-          className: "mt-4 border-t border-line pt-3 font-mono text-[11px] text-mute flex flex-wrap gap-4",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
-            children: "\u26A0 Risk: QR Vandalism \u2192 Solved by 3M industrial vinyl + UV laminate."
-          }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
-            children: "\u26A0 Risk: Fake Overflow Reports \u2192 Solved by geolocation radius lock + AI photo duplicate check."
-          }, void 0, false), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
-            children: "\u26A0 Risk: Staff Adoption \u2192 Zero-training audio directions in Hindi & regional languages."
-          }, void 0, false)]
+          className: "mt-5 border-t border-line pt-4 grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: "bg-surface border border-line p-3 text-mute",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+              className: "text-volt font-bold block mb-1",
+              children: "\u26A0 Risk: QR Vandalism"
+            }, void 0, false), "Solved by 3M industrial vinyl + UV laminate."]
+          }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: "bg-surface border border-line p-3 text-mute",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+              className: "text-rec font-bold block mb-1",
+              children: "\u26A0 Risk: Fake Reports"
+            }, void 0, false), "Solved by geolocation radius lock + AI photo duplicate check."]
+          }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
+            className: "bg-surface border border-line p-3 text-mute",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("span", {
+              className: "text-org font-bold block mb-1",
+              children: "\u26A0 Risk: Staff Adoption"
+            }, void 0, false), "Zero-training audio directions in Hindi & regional languages."]
+          }, void 0, true)]
         }, void 0, true)]
       }, void 0, true)]
     }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)("div", {
