@@ -1,0 +1,22 @@
+# Temporary / dev helper scripts
+*.ps1
+*.bat
+temp_steps.txt
+tunnel.log
+
+# Large binaries & archives
+cloudflared.exe
+mingit/
+mingit.zip
+dist.zip
+
+# Screenshots & tests
+*.png
+
+# Local environment / node / python
+node_modules/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+Thumbs.db

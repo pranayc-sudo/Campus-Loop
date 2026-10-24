@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusLoop — Pitch Deck & Architectural Overview</title>
+  <meta name="theme-color" content="#090A0C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            volt: '#D1FF4D',
+            voltHover: '#B8E635',
+            ink: '#090A0C',
+            surface: '#121418',
+            panel: '#15171C',
+            line: '#22262B',
+            mute: '#8B949E',
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #090A0C;
+      color: #F2F4F7;
+    }
+  </style>
+</head>
+<body class="flex flex-col h-screen bg-[#090A0C] text-white">
+
+  <!-- Tactical Header Navigation -->
+  <header class="h-14 sm:h-16 bg-[#121418] border-b border-[#22262B] px-4 sm:px-6 flex items-center justify-between shrink-0 z-20">
+    
+    <!-- Left: Brand + Deck Descriptor -->
+    <div class="flex items-center gap-3">
+      <a href="landing.html" class="flex items-center gap-2.5 group">
+        <!-- Brand Icon -->
+        <div class="w-8 h-8 rounded-lg bg-black/60 border border-[#22262B] group-hover:border-volt/60 flex items-center justify-center transition-colors">
+          <svg class="w-4 h-4 text-volt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+            <path d="M3 3v5h5"/>
+            <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+            <path d="M16 21h5v-5"/>
+          </svg>
+        </div>
+        <div class="font-display font-black text-base sm:text-lg tracking-wider text-white">
+          <span class="text-volt">CAMPUS</span><span class="text-white">LOOP</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-2 pl-3 border-l border-[#22262B]">
+        <span class="w-1.5 h-1.5 rounded-full bg-volt animate-pulse"></span>
+        <span class="font-mono text-xs text-mute uppercase tracking-widest">PITCH DECK // 10 SLIDES</span>
+      </div>
+    </div>
+
+    <!-- Right: Action Buttons -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Back to Hero -->
+      <a href="landing.html" 
+         class="flex items-center gap-1.5 bg-[#1A1D24] hover:bg-[#222630] text-white border border-[#22262B] hover:border-volt/40 font-display font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-lg transition-all duration-150">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+        </svg>
+        <span>Back</span>
+      </a>
+
+      <!-- Direct PDF / Download -->
+      <a href="CampusLoop_Pitch_Deck.pdf" 
+         target="_blank"
+         download="CampusLoop_Pitch_Deck.pdf"
+         class="hidden sm:flex items-center gap-1.5 bg-[#1A1D24] hover:bg-[#222630] text-mute hover:text-white border border-[#22262B] hover:border-white/20 font-display font-bold text-xs sm:text-sm px-3.5 py-2 rounded-lg transition-all duration-150">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        <span>Download PDF</span>
+      </a>
+
+      <!-- Go to Website -->
+      <a href="https://campus-loop-dg0.pages.dev/login" 
+         target="_blank"
+         class="flex items-center gap-1.5 bg-volt hover:bg-voltHover text-ink font-display font-black text-xs sm:text-sm px-3.5 sm:px-4 py-2 rounded-lg transition-all duration-150 shadow-lg shadow-volt/10">
+        <span>Go to Website</span>
+        <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Fullscreen Embedded Presentation Viewport -->
+  <main class="flex-1 w-full h-[calc(100vh-3.5rem)] sm:h-[calc(100vh-4rem)] relative bg-[#090A0C]">
+    <object 
+      data="CampusLoop_Pitch_Deck.pdf#view=FitH&toolbar=1&navpanes=0" 
+      type="application/pdf" 
+      class="w-full h-full block border-none bg-[#090A0C]">
+      
+      <!-- Fallback for browsers/viewports that don't support inline object -->
+      <iframe 
+        src="CampusLoop_Pitch_Deck.pdf#view=FitH&toolbar=1" 
+        class="w-full h-full border-none">
+        
+        <!-- Deep Fallback -->
+        <div class="h-full flex flex-col items-center justify-center p-6 text-center">
+          <div class="w-16 h-16 rounded-2xl bg-surface border border-line flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-volt" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h2 class="text-xl font-display font-bold text-white mb-2">CampusLoop Pitch Deck</h2>
+          <p class="text-sm text-mute max-w-md mb-6">
+            Your browser does not support inline PDF viewing. Click below to view the clean 10-slide presentation deck.
+          </p>
+          <a href="CampusLoop_Pitch_Deck.pdf" 
+             target="_blank" 
+             class="bg-volt hover:bg-voltHover text-ink font-display font-bold px-6 py-3 rounded-xl transition-all">
+            Open Pitch Deck PDF &rarr;
+          </a>
+        </div>
+      </iframe>
+    </object>
+  </main>
+
+</body>
+</html>

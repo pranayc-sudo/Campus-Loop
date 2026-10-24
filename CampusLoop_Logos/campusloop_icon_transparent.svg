@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="1024" height="1024" fill="none">
+  <!-- CampusLoop Tactical Blueprint Loop Mark -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="2" stroke="#22262B" stroke-width="1.5" fill="none" />
+  <path d="M8 16a8 8 0 1 1 8 8" stroke="#D1FF4D" stroke-width="3" stroke-linecap="square" fill="none" />
+  <rect x="6" y="20" width="6" height="6" fill="#D1FF4D" rx="0.5" />
+</svg>

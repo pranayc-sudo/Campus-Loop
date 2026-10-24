@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>CampusLoop — Closing The Loop On Campus Waste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            volt: "#D1FF4D",
+            voltHover: "#CCFF00",
+            ink: "#090A0C",
+            surface: "#121418",
+            panel: "#15171C",
+            panelHover: "#1D2128",
+            line: "#22262B",
+            mute: "#8B949E",
+            organic: "#00E676",
+            recyclable: "#00BFFF",
+            reject: "#FF453A"
+          },
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans: ['Manrope', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Fullscreen viewport lock with NO vertical scrolling */
+    html, body {
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #080a0c;
+      color: #F2F4F7;
+    }
+
+    /* Asymmetric Volumetric Ambient Glow focused on the right side phone */
+    .hero-mesh {
+      background-image: 
+        radial-gradient(ellipse 65% 55% at 76% 42%, rgba(209, 255, 77, 0.22) 0%, rgba(20, 36, 12, 0.42) 36%, rgba(8, 10, 12, 0.98) 74%),
+        radial-gradient(circle at 12% 18%, rgba(209, 255, 77, 0.05) 0%, transparent 35%);
+    }
+
+    /* Subtle tactical noise */
+    .bg-noise {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+    }
+
+    /* 3D Tilted Device Container */
+    .device-stage {
+      perspective: 1200px;
+      perspective-origin: 50% 35%;
+    }
+
+    .tilted-phone {
+      --phone-ty: -18px;
+      --phone-rx: 20deg;
+      --phone-ry: -12deg;
+      --phone-rz: 16deg;
+      --phone-scale: 1;
+      --mouse-tilt-x: 0deg;
+      --mouse-tilt-y: 0deg;
+
+      transform-style: preserve-3d;
+      transform: translateY(var(--phone-ty)) rotateX(calc(var(--phone-rx) + var(--mouse-tilt-x))) rotateY(calc(var(--phone-ry) + var(--mouse-tilt-y))) rotateZ(var(--phone-rz)) scale(var(--phone-scale));
+      transform-origin: center center;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      cursor: pointer;
+      box-shadow: 
+        0 35px 80px -15px rgba(0, 0, 0, 0.95),
+        0 0 70px 12px rgba(209, 255, 77, 0.32),
+        inset 0 0 0 1px rgba(209, 255, 77, 0.35);
+    }
+
+    .tilted-phone:hover {
+      transform: translateY(calc(var(--phone-ty) - 18px)) rotateX(calc(var(--phone-rx) - 5deg + var(--mouse-tilt-x))) rotateY(calc(var(--phone-ry) + 5deg + var(--mouse-tilt-y))) rotateZ(calc(var(--phone-rz) - 3deg)) scale(calc(var(--phone-scale) * 1.05)) !important;
+      box-shadow: 
+        0 45px 95px -15px rgba(0, 0, 0, 0.98),
+        0 0 100px 22px rgba(209, 255, 77, 0.55),
+        inset 0 0 0 2px rgba(209, 255, 77, 0.8) !important;
+    }
+
+    .brand-title {
+      letter-spacing: -0.045em;
+      text-shadow: 0 0 40px rgba(209, 255, 77, 0.28);
+    }
+
+    /* Height-responsive adjustments for all screen sizes and laptop displays */
+    @media (max-height: 900px) {
+      .hero-heading {
+        font-size: 3.4rem !important;
+        line-height: 0.98 !important;
+      }
+      .brand-title {
+        font-size: 3.4rem !important;
+        margin-bottom: 2px !important;
+      }
+      .tilted-phone {
+        --phone-ty: -8px;
+        --phone-rx: 18deg;
+        --phone-ry: -10deg;
+        --phone-rz: 14deg;
+        --phone-scale: 0.92;
+      }
+    }
+
+    @media (max-height: 800px) {
+      .hero-heading {
+        font-size: 2.8rem !important;
+        line-height: 0.98 !important;
+      }
+      .brand-title {
+        font-size: 2.8rem !important;
+        margin-bottom: 2px !important;
+      }
+      .tilted-phone {
+        --phone-ty: -6px;
+        --phone-rx: 18deg;
+        --phone-ry: -10deg;
+        --phone-rz: 14deg;
+        --phone-scale: 0.85;
+      }
+    }
+
+    @media (max-height: 680px) {
+      .hero-heading {
+        font-size: 2.2rem !important;
+        line-height: 0.98 !important;
+      }
+      .brand-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 4px !important;
+      }
+      .device-stage {
+        height: 340px !important;
+        max-height: 340px !important;
+      }
+      .tilted-phone {
+        --phone-ty: -8px;
+        --phone-rx: 16deg;
+        --phone-ry: -8deg;
+        --phone-rz: 12deg;
+        --phone-scale: 0.70;
+      }
+    }
+
+    @media (max-height: 590px) {
+      .hero-heading {
+        font-size: 1.85rem !important;
+        line-height: 0.98 !important;
+      }
+      .brand-title {
+        font-size: 1.85rem !important;
+        margin-bottom: 2px !important;
+      }
+      .device-stage {
+        height: 280px !important;
+        max-height: 280px !important;
+      }
+      .tilted-phone {
+        --phone-ty: -4px;
+        --phone-rx: 15deg;
+        --phone-ry: -8deg;
+        --phone-rz: 10deg;
+        --phone-scale: 0.60;
+      }
+    }
+
+    @media (max-height: 520px) {
+      .hero-heading {
+        font-size: 1.5rem !important;
+        line-height: 0.98 !important;
+      }
+      .brand-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 0px !important;
+      }
+      .device-stage {
+        height: 230px !important;
+        max-height: 230px !important;
+      }
+      .tilted-phone {
+        --phone-ty: 0px;
+        --phone-rx: 14deg;
+        --phone-ry: -6deg;
+        --phone-rz: 8deg;
+        --phone-scale: 0.50;
+      }
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.8); }
+    }
+    .pulse-live {
+      animation: pulse-dot 2s infinite ease-in-out;
+    }
+
+    /* Modal Animation */
+    .modal-backdrop {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-panel {
+      transform: translateY(20px) scale(0.97);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .modal-backdrop.open .modal-panel {
+      transform: translateY(0) scale(1);
+    }
+  </style>
+</head>
+<body class="h-full h-[100dvh] flex flex-col justify-between hero-mesh bg-noise select-none">
+
+  <!-- Main 2-Column Split Content -->
+  <main class="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 flex-1 flex flex-col justify-center min-h-0 pt-4 sm:pt-6">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 xl:gap-12 items-center flex-1 min-h-0">
+      
+      <!-- LEFT COLUMN: Mission & Live Pitch Copy -->
+      <div class="flex flex-col justify-center text-left py-2">
+        
+        <!-- CampusLoop Brand Signature (from reference) -->
+        <div class="mb-5 sm:mb-7">
+          <div class="flex items-center gap-3">
+            <svg width="30" height="30" viewBox="0 0 32 32" class="shrink-0" aria-hidden="true">
+              <rect x="1" y="1" width="30" height="30" fill="none" stroke="#22262B" stroke-width="1.2" />
+              <path d="M8 16a8 8 0 1 1 8 8" fill="none" stroke="#D1FF4D" stroke-width="3" stroke-linecap="square" />
+              <rect x="6" y="20" width="6" height="6" fill="#D1FF4D" />
+            </svg>
+            <span class="font-display font-bold text-2xl tracking-tight text-white">
+              Campus<span class="text-volt">Loop</span>
+            </span>
+          </div>
+          <div class="font-mono text-[11px] sm:text-xs text-volt uppercase tracking-[0.22em] font-bold mt-2">
+            CAMPUS WASTE INTELLIGENCE / CIRCULAR ECONOMY OS
+          </div>
+        </div>
+
+        <!-- Overline / Status -->
+        <div class="font-mono text-xs sm:text-[13px] tracking-[0.25em] text-[#8B949E] uppercase mb-4 flex items-center gap-2">
+          <span>DEPLOYMENT READY</span>
+          <span class="text-mute/60">•</span>
+          <span>LIVE DEMO</span>
+        </div>
+
+        <!-- Giant Bold Display Headline -->
+        <h1 class="hero-heading font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-[72px] xl:text-[80px] leading-[0.96] uppercase text-white tracking-tight">
+          CLOSING<br>
+          THE LOOP ON<br>
+          CAMPUS WASTE
+        </h1>
+
+        <!-- Subtitle 1 -->
+        <p class="mt-5 text-base sm:text-lg md:text-xl text-[#CBD5E1] font-normal leading-relaxed max-w-xl">
+          Interactive digital twin and edge scanner operational right now.
+        </p>
+
+        <!-- Subtitle 2 / Live App Link -->
+        <div class="mt-4 text-sm sm:text-base text-[#94A3B8] leading-relaxed">
+          <span>Experience the live web app and inspection console:</span><br>
+          <a href="https://campus-loop-dg0.pages.dev/login" 
+             onclick="window.location.href='https://campus-loop-dg0.pages.dev/login';"
+             class="text-white font-mono font-semibold hover:text-volt transition-colors inline-block mt-0.5">
+            https://campus-loop-dg0.pages.dev/login
+          </a>
+        </div>
+
+        <!-- Meta Footer Kicker -->
+        <div class="mt-6 sm:mt-8 text-xs font-mono text-[#64748B]">
+          Sociothon 2026 Showcase • Autonomous Waste Intelligence
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: CAMPUSLOOP Brand Title + Tilted 3D Smartphone -->
+      <div class="flex flex-col items-center justify-center relative min-h-0">
+        
+        <!-- CAMPUSLOOP Title (Two-tone: Volt + White) -->
+        <h2 class="brand-title font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-[76px] leading-none uppercase text-volt text-center tracking-tight mb-1 sm:mb-2 shrink-0">
+          <span>CAMPUS</span><span id="loop-text" class="text-white drop-shadow-[0_0_40px_rgba(255,255,255,0.35)] cursor-pointer" title="Click to cycle accent color">LOOP</span>
+        </h2>
+
+        <!-- 3D Phone Mockup (Elongated 520px-560px format) -->
+        <div class="device-stage w-full flex justify-center items-center flex-1 min-h-0">
+          
+          <!-- Phone Frame -->
+          <div class="tilted-phone w-[240px] sm:w-[260px] md:w-[275px] rounded-[40px] bg-[#090A0C] p-2.5 sm:p-3 border-[2.5px] border-[#252c1e] relative overflow-hidden">
+            
+            <!-- Screen Glass (Neon Volt with Operations UI) -->
+            <div class="phone-screen-glass w-full h-[450px] sm:h-[480px] md:h-[510px] rounded-[30px] bg-gradient-to-b from-[#D8FF55] via-[#C5FF2E] to-[#B0FA14] text-[#090A0C] p-4 flex flex-col justify-between relative shadow-inner">
+              
+              <!-- Dynamic Island -->
+              <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-4 sm:h-5 bg-black rounded-full flex items-center justify-end px-2.5">
+                <div class="w-2 h-2 rounded-full bg-volt/90"></div>
+              </div>
+
+              <!-- Phone Header -->
+              <div class="pt-5 flex justify-between items-center font-mono text-[10px] sm:text-[11px] font-bold">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-[#090A0C] pulse-live"></span>
+                  <span class="tracking-wider uppercase">CAMPUSLOOP</span>
+                </div>
+                <div class="bg-black/15 px-2 py-0.5 rounded text-[10px] tracking-wide">
+                  CAMPUS OPS
+                </div>
+              </div>
+
+              <!-- Metrics / Eco Balance -->
+              <div class="mt-2 text-left">
+                <div class="text-[10px] sm:text-[11px] uppercase font-mono font-bold tracking-wider opacity-75">
+                  Eco Tokens & Impact
+                </div>
+                <div class="text-4xl sm:text-5xl font-display font-black tracking-tight mt-1 text-[#090A0C]">
+                  4,850 <span class="text-base sm:text-lg font-mono font-bold">PTS</span>
+                </div>
+                <div class="text-xs font-mono mt-0.5 opacity-85 flex items-center gap-1 font-semibold">
+                  <span>↑ 1,284.6 KG</span>
+                  <span class="opacity-60">• Diverted This Month</span>
+                </div>
+              </div>
+
+              <!-- Node Card -->
+              <div class="bg-black/10 backdrop-blur-sm border border-black/10 rounded-xl p-3 my-1.5 text-left">
+                <div class="flex justify-between items-center text-[10px] font-mono font-bold">
+                  <span class="opacity-70">NODE: HOSTEL 4 HUB</span>
+                  <span class="bg-[#090A0C] text-volt px-2 py-0.5 rounded text-[9px]">99.4% SORT</span>
+                </div>
+                <div class="font-display font-bold text-sm mt-0.5">AI SENSOR ARRAY #08</div>
+              </div>
+
+              <!-- Action Buttons inside Phone -->
+              <div class="grid grid-cols-2 gap-2 my-1.5">
+                <a href="https://campus-loop-dg0.pages.dev/login" 
+                   onclick="window.location.href='https://campus-loop-dg0.pages.dev/login';"
+                   class="bg-[#090A0C] hover:bg-[#121418] text-volt p-2.5 rounded-xl flex flex-col items-center justify-center text-center shadow transition-colors cursor-pointer">
+                  <svg class="w-4 h-4 mb-1 text-volt" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 7V5a2 2 0 012-2h2m10 0h2a2 2 0 012 2v2m0 10v2a2 2 0 01-2 2h-2m-10 0H5a2 2 0 01-2-2v-2"></path>
+                  </svg>
+                  <span class="font-mono font-bold text-xs">SCAN BIN ↗</span>
+                </a>
+                <a href="https://campus-loop-dg0.pages.dev/login" 
+                   onclick="window.location.href='https://campus-loop-dg0.pages.dev/login';"
+                   class="bg-black/15 hover:bg-black/25 text-[#090A0C] p-2.5 rounded-xl flex flex-col items-center justify-center text-center font-bold transition-colors cursor-pointer">
+                  <svg class="w-4 h-4 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                  <span class="font-mono font-bold text-xs">REWARDS ⚡</span>
+                </a>
+              </div>
+
+              <!-- Bottom Tabs inside Phone -->
+              <div class="bg-[#090A0C] text-white rounded-xl py-1.5 px-4 flex justify-between items-center text-[10px] sm:text-[11px] font-mono font-semibold">
+                <span class="text-volt">LIVE TWIN</span>
+                <span class="opacity-60">SCANNER</span>
+                <span class="opacity-60">WALLET</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Bottom Docked Action Bar (Positioned under the right side, matching the reference image) -->
+  <div class="w-full z-30 shrink-0 pb-0">
+    <div class="w-full flex justify-end">
+      
+      <!-- Docked split buttons spanning the bottom-right half -->
+      <div class="flex items-stretch h-14 sm:h-16 md:h-[64px] w-full lg:w-[48%] shadow-2xl">
+        
+        <!-- Button 1: GO TO WEBSITE (Left side, Neon Volt, rounded-tl-2xl) -->
+        <a href="/login" 
+           id="btn-goto-website"
+           onclick="window.location.href='/login';"
+           style="background-color: #D1FF4D !important; color: #090A0C !important; border-top: 2px solid #D1FF4D !important; border-left: 2px solid #D1FF4D !important;"
+           class="flex-1 flex items-center justify-center gap-2 bg-volt hover:bg-voltHover text-ink font-display font-black text-sm sm:text-base md:text-lg tracking-wider uppercase rounded-tl-xl sm:rounded-tl-2xl transition-all duration-150 transform active:scale-[0.99] hover:shadow-[0_-8px_30px_rgba(209,255,77,0.35)] cursor-pointer">
+          <span style="color: #090A0C !important;">GO TO WEBSITE</span>
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" style="color: #090A0C !important;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+        <!-- Button 2: LEARN MORE (Right side, Dark Graphite, rounded-tr-2xl) -->
+        <a 
+          id="btn-learn-more"
+          href="CampusLoop_Pitch_Deck.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="background-color: #15171C !important; color: #FFFFFF !important; border-top: 2px solid #22262B !important; border-right: 2px solid #22262B !important;"
+          class="flex-1 flex items-center justify-center gap-2 bg-panel hover:bg-panelHover text-white font-display font-extrabold text-sm sm:text-base md:text-lg tracking-wider uppercase rounded-tr-xl sm:rounded-tr-2xl transition-all duration-150 hover:border-volt/50 group cursor-pointer">
+          <span class="group-hover:text-volt transition-colors">LEARN MORE</span>
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5] text-white group-hover:text-volt group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Interactive "Learn More" Architecture Modal -->
+  <div id="learn-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-panel bg-[#121418] border border-line w-full max-w-2xl rounded-2xl p-6 sm:p-8 text-left relative shadow-2xl">
+      
+      <button onclick="closeLearnModal()" class="absolute top-5 right-5 text-mute hover:text-white p-2 rounded-lg bg-surface border border-line hover:border-volt/50 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <div class="flex items-center gap-2 font-mono text-xs text-volt uppercase tracking-wider mb-2">
+        <span class="w-2 h-2 rounded-full bg-volt"></span>
+        <span>CampusLoop Architecture</span>
+      </div>
+      <h3 class="text-2xl sm:text-3xl font-display font-black text-white">How CampusLoop Works</h3>
+      <p class="text-sm text-mute mt-2">
+        A tactical circular economy platform transforming institutional campuses into zero-waste ecosystems.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 my-6">
+        <div class="bg-surface border border-line p-4 rounded-xl">
+          <div class="font-mono text-xs text-organic font-bold">01 / AI SCANNER</div>
+          <div class="font-display font-bold text-base text-white mt-1">Multi-Class Vision</div>
+          <p class="text-xs text-mute mt-1">Instantly classifies Organic, Recyclable, and Reject streams with contamination alerts.</p>
+        </div>
+
+        <div class="bg-surface border border-line p-4 rounded-xl">
+          <div class="font-mono text-xs text-recyclable font-bold">02 / DIGITAL TWIN</div>
+          <div class="font-display font-bold text-base text-white mt-1">Live Campus Grid</div>
+          <p class="text-xs text-mute mt-1">Full 3D campus mapping with real-time fill level sensors and dispatch routing.</p>
+        </div>
+
+        <div class="bg-surface border border-line p-4 rounded-xl">
+          <div class="font-mono text-xs text-volt font-bold">03 / ECO TOKENOMICS</div>
+          <div class="font-display font-bold text-base text-white mt-1">Proof-of-Sort</div>
+          <p class="text-xs text-mute mt-1">Students earn verified green points redeemable for cafeteria credits and rewards.</p>
+        </div>
+
+        <div class="bg-surface border border-line p-4 rounded-xl">
+          <div class="font-mono text-xs text-white font-bold">04 / ESG & AUDIT</div>
+          <div class="font-display font-bold text-base text-white mt-1">Institutional ROI</div>
+          <p class="text-xs text-mute mt-1">Automated compliance reporting, carbon diversion metrics, and cost savings tracking.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center gap-3 pt-2 border-t border-line">
+        <a href="https://campus-loop-dg0.pages.dev/login" 
+           onclick="window.location.href='https://campus-loop-dg0.pages.dev/login';"
+           class="w-full sm:w-auto flex-1 bg-volt hover:bg-voltHover text-ink font-display font-bold text-sm text-center py-3 px-5 rounded-lg transition-colors cursor-pointer">
+          Go To Website (Login) ↗
+        </a>
+        <a href="https://campus-loop-dg0.pages.dev/twin" 
+           target="_blank"
+           class="w-full sm:w-auto flex-1 bg-[#1A1D24] hover:bg-[#222630] text-white border border-line font-display font-bold text-sm text-center py-3 px-5 rounded-lg transition-colors">
+          Open Live Digital Twin ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function openLearnModal() {
+      document.getElementById('learn-modal').classList.add('open');
+    }
+    function closeLearnModal() {
+      document.getElementById('learn-modal').classList.remove('open');
+    }
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLearnModal();
+    });
+    document.getElementById('learn-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'learn-modal') closeLearnModal();
+    });
+
+    // Color cycling for LOOP on click
+    const loopEl = document.getElementById('loop-text');
+    const colorStyles = [
+      { color: '#FFFFFF', shadow: '0 0 40px rgba(255,255,255,0.35)' },
+      { color: '#00F0FF', shadow: '0 0 40px rgba(0,240,255,0.45)' },
+      { color: '#00E676', shadow: '0 0 40px rgba(0,230,118,0.4)' },
+      { color: '#D1FF4D', shadow: '0 0 40px rgba(209,255,77,0.35)' }
+    ];
+    let currentColorIdx = 0;
+    if (loopEl) {
+      loopEl.addEventListener('click', () => {
+        currentColorIdx = (currentColorIdx + 1) % colorStyles.length;
+        const s = colorStyles[currentColorIdx];
+        loopEl.style.color = s.color;
+        loopEl.style.textShadow = s.shadow;
+      });
+    }
+
+    // Dynamic 3D tilt interaction on mousemove over phone stage
+    (function() {
+      const phoneEl = document.querySelector('.tilted-phone');
+      const stageEl = document.querySelector('.device-stage');
+      if (phoneEl && stageEl) {
+        stageEl.addEventListener('mousemove', function(e) {
+          const rect = stageEl.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          phoneEl.style.setProperty('--mouse-tilt-x', (y * -16) + 'deg');
+          phoneEl.style.setProperty('--mouse-tilt-y', (x * 16) + 'deg');
+        });
+        stageEl.addEventListener('mouseleave', function() {
+          phoneEl.style.removeProperty('--mouse-tilt-x');
+          phoneEl.style.removeProperty('--mouse-tilt-y');
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

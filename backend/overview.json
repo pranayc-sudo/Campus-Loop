@@ -1,0 +1,289 @@
+﻿{
+    "ts":  "2026-10-22T17:21:16.993201+00:00",
+    "ist_hour":  22.5,
+    "health_score":  94.0,
+    "kpis":  {
+                 "total_kg":  728.8,
+                 "diversion_rate":  59.7,
+                 "active_bins":  63,
+                 "critical_zones":  0,
+                 "scans_today":  10,
+                 "guardrail_hits":  3,
+                 "revenue_inr":  5880,
+                 "co2_saved_kg":  406.7
+             },
+    "composition":  [
+                        {
+                            "name":  "Organic",
+                            "value":  52
+                        },
+                        {
+                            "name":  "Recyclable",
+                            "value":  31
+                        },
+                        {
+                            "name":  "Non-Recyclable",
+                            "value":  17
+                        }
+                    ],
+    "hourly":  [
+                   {
+                       "hour":  "00:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "01:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "02:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "03:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "04:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "05:00",
+                       "organic":  5.5,
+                       "recyclable":  3.3,
+                       "non_recyclable":  1.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "06:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "07:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "08:00",
+                       "organic":  18.2,
+                       "recyclable":  10.8,
+                       "non_recyclable":  5.9,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "09:00",
+                       "organic":  18.2,
+                       "recyclable":  10.8,
+                       "non_recyclable":  5.9,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "10:00",
+                       "organic":  18.2,
+                       "recyclable":  10.8,
+                       "non_recyclable":  5.9,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "11:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "12:00",
+                       "organic":  30.0,
+                       "recyclable":  17.9,
+                       "non_recyclable":  9.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "13:00",
+                       "organic":  30.0,
+                       "recyclable":  17.9,
+                       "non_recyclable":  9.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "14:00",
+                       "organic":  30.0,
+                       "recyclable":  17.9,
+                       "non_recyclable":  9.8,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "15:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "16:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "17:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "18:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "19:00",
+                       "organic":  23.7,
+                       "recyclable":  14.1,
+                       "non_recyclable":  7.7,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "20:00",
+                       "organic":  23.7,
+                       "recyclable":  14.1,
+                       "non_recyclable":  7.7,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "21:00",
+                       "organic":  23.7,
+                       "recyclable":  14.1,
+                       "non_recyclable":  7.7,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "22:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   },
+                   {
+                       "hour":  "23:00",
+                       "organic":  12.6,
+                       "recyclable":  7.5,
+                       "non_recyclable":  4.1,
+                       "capacity":  48.6
+                   }
+               ],
+    "alerts":  [
+                   {
+                       "id":  "a-peak-lunch",
+                       "level":  "warning",
+                       "zone":  "MAC Canteen",
+                       "message":  "Lunch peak forecast 12:30-14:00 IST: +68% organic load. Pre-position 2 bins.",
+                       "ts":  "2026-10-22T17:21:16.993201+00:00"
+                   },
+                   {
+                       "id":  "a-peak-dinner",
+                       "level":  "info",
+                       "zone":  "Ravindra Bhawan",
+                       "message":  "Dinner surge 19:30-21:30 IST expected. Optimized loop auto-scheduled at 21:45.",
+                       "ts":  "2026-10-22T17:21:16.993201+00:00"
+                   }
+               ],
+    "zones":  [
+                  {
+                      "id":  "Z01",
+                      "name":  "Thomason Main Bldg",
+                      "fill":  37.8,
+                      "status":  "ok",
+                      "today_kg":  47.7
+                  },
+                  {
+                      "id":  "Z02",
+                      "name":  "MG Central Library",
+                      "fill":  47.4,
+                      "status":  "ok",
+                      "today_kg":  27.6
+                  },
+                  {
+                      "id":  "Z03",
+                      "name":  "Lecture Hall Complex (LHC)",
+                      "fill":  43.4,
+                      "status":  "ok",
+                      "today_kg":  57.8
+                  },
+                  {
+                      "id":  "Z04",
+                      "name":  "Ravindra Bhawan",
+                      "fill":  44.7,
+                      "status":  "ok",
+                      "today_kg":  115.6
+                  },
+                  {
+                      "id":  "Z05",
+                      "name":  "Govind Bhawan",
+                      "fill":  50.7,
+                      "status":  "ok",
+                      "today_kg":  110.6
+                  },
+                  {
+                      "id":  "Z06",
+                      "name":  "MAC Canteen",
+                      "fill":  37.0,
+                      "status":  "ok",
+                      "today_kg":  150.8
+                  },
+                  {
+                      "id":  "Z07",
+                      "name":  "Rajiv Canteen",
+                      "fill":  48.6,
+                      "status":  "ok",
+                      "today_kg":  130.7
+                  },
+                  {
+                      "id":  "Z08",
+                      "name":  "IITR Hospital",
+                      "fill":  77.3,
+                      "status":  "warning",
+                      "today_kg":  17.6
+                  },
+                  {
+                      "id":  "Z09",
+                      "name":  "LBS Sports Stadium",
+                      "fill":  77.5,
+                      "status":  "warning",
+                      "today_kg":  37.7
+                  },
+                  {
+                      "id":  "Z10",
+                      "name":  "Convocation Hall",
+                      "fill":  47.2,
+                      "status":  "ok",
+                      "today_kg":  32.7
+                  }
+              ]
+}
+
+

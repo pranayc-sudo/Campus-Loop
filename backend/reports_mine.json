@@ -1,0 +1,36 @@
+﻿[
+    {
+        "id":  "9db004be-c974-4342-828b-f1add8acce5a",
+        "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+        "user_name":  "Demo Student",
+        "zone_id":  "Z06",
+        "zone":  "MAC Canteen",
+        "note":  "Overflow reported from digital twin",
+        "fill_at_report":  72.8,
+        "status":  "pending",
+        "reward":  15,
+        "created_at":  "2026-10-22T11:04:12.331371+00:00"
+    },
+    {
+        "id":  "1fc29562-5873-42bd-9c6b-40c7b33f33dc",
+        "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+        "zone_id":  "Z09",
+        "zone":  "LBS Sports Stadium",
+        "note":  "",
+        "created_at":  "2026-10-22T10:53:52.295726+00:00",
+        "reward":  15,
+        "status":  "approved"
+    },
+    {
+        "id":  "2b787e35-7bda-4db9-a680-c85bd3698d63",
+        "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+        "zone_id":  "Z04",
+        "zone":  "Ravindra Bhawan",
+        "note":  "Overflow reported from digital twin",
+        "created_at":  "2026-10-22T10:48:12.633628+00:00",
+        "reward":  15,
+        "status":  "approved"
+    }
+]
+
+

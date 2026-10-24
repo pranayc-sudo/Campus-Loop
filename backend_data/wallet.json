@@ -1,0 +1,209 @@
+﻿{
+    "credits":  135,
+    "rank":  9,
+    "tier":  "Seedling",
+    "transactions":  [
+                         {
+                             "id":  "7ebab068-f9a0-42a2-afef-af8fb6ac2346",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  5,
+                             "label":  "Sorted: soiled napkin",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T16:24:39.365367+00:00"
+                         },
+                         {
+                             "id":  "33406c45-6709-4f97-8edf-b34ac20b9343",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  -220,
+                             "label":  "Redeemed: Combo Thali at Rs 49",
+                             "kind":  "redeem",
+                             "created_at":  "2026-10-22T16:18:48.407571+00:00"
+                         },
+                         {
+                             "id":  "719ba9c3-3d8f-4431-8688-96e0f4ff21ba",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  -90,
+                             "label":  "Redeemed: Cold Coffee",
+                             "kind":  "redeem",
+                             "created_at":  "2026-10-22T16:18:42.761071+00:00"
+                         },
+                         {
+                             "id":  "310acecf-b0a6-424e-89e3-2f428b99e0c3",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: plastic mug",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T11:02:14.995815+00:00"
+                         },
+                         {
+                             "id":  "d14282cb-d416-4473-bc36-df0628816a39",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  5,
+                             "label":  "Sorted: snack wrapper",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T11:00:34.829905+00:00"
+                         },
+                         {
+                             "id":  "906b54ef-8449-4edb-a7ab-8c89c5ec35de",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: spiral notebook",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:59:53.243519+00:00"
+                         },
+                         {
+                             "id":  "0ca0a0f4-5c39-4a46-abe6-b4b8dbd738f0",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: non-woven bag",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:59:22.737747+00:00"
+                         },
+                         {
+                             "id":  "707b9a12-fe5f-48c4-8f6c-99f60cafb5f0",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: metal water bottle",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:58:49.510647+00:00"
+                         },
+                         {
+                             "id":  "e51512e0-640d-4d09-b07a-c1de5d190a6e",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  15,
+                             "label":  "Reported overflow: LBS Sports Stadium",
+                             "kind":  "report",
+                             "created_at":  "2026-10-22T10:53:52.306136+00:00"
+                         },
+                         {
+                             "id":  "4dd549ef-0802-4ad9-bca6-49fea4937d9d",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  5,
+                             "label":  "Sorted: greasy pizza box",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:51:54.654329+00:00"
+                         },
+                         {
+                             "id":  "e7b8073e-b19e-4dcc-b995-b55043816c23",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  15,
+                             "label":  "Reported overflow: Ravindra Bhawan",
+                             "kind":  "report",
+                             "created_at":  "2026-10-22T10:48:12.638450+00:00"
+                         },
+                         {
+                             "id":  "5c08d1f6-bf73-4b89-b154-6b106e520b5c",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: plastic bottle",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:48:05.945606+00:00"
+                         },
+                         {
+                             "id":  "8a9caac3-7f7b-4715-8578-e75648584d4c",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: water carton",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:42:22.019125+00:00"
+                         },
+                         {
+                             "id":  "05fb925b-db4a-47e7-a9b6-91903e4b317a",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: Banana peel",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:33:39.665148+00:00"
+                         },
+                         {
+                             "id":  "fd514788-a8b1-4c58-9d53-037d87d6c2e8",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  15,
+                             "label":  "Reported overflow: Rajiv Canteen",
+                             "kind":  "report",
+                             "created_at":  "2026-10-22T10:33:39.663881+00:00"
+                         },
+                         {
+                             "id":  "daede819-6c40-45d0-84c0-c37bf24d2c01",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  10,
+                             "label":  "Sorted: PET bottle",
+                             "kind":  "scan",
+                             "created_at":  "2026-10-22T10:33:39.662253+00:00"
+                         },
+                         {
+                             "id":  "db5fe4f9-c106-4069-836d-153a3f6924e6",
+                             "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                             "amount":  50,
+                             "label":  "Welcome bonus",
+                             "kind":  "bonus",
+                             "created_at":  "2026-10-22T10:33:39.626981+00:00"
+                         }
+                     ],
+    "coupons":  [
+                    {
+                        "id":  "c6521379-9523-4ca0-b850-916bb690d3e7",
+                        "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                        "reward_id":  "r3",
+                        "title":  "Combo Thali at Rs 49",
+                        "venue":  "MAC Canteen",
+                        "code":  "CL-8B9185",
+                        "created_at":  "2026-10-22T16:18:48.406192+00:00"
+                    },
+                    {
+                        "id":  "7b7bba12-03f4-4f65-8750-c3614db49aa1",
+                        "user_id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+                        "reward_id":  "r6",
+                        "title":  "Cold Coffee",
+                        "venue":  "Rajiv Canteen",
+                        "code":  "CL-84D58D",
+                        "created_at":  "2026-10-22T16:18:42.479770+00:00"
+                    }
+                ],
+    "rewards":  [
+                    {
+                        "id":  "r1",
+                        "title":  "Free Masala Chai",
+                        "venue":  "MAC Canteen",
+                        "cost":  60,
+                        "tag":  "Beverage"
+                    },
+                    {
+                        "id":  "r2",
+                        "title":  "10% off any meal",
+                        "venue":  "Rajiv Canteen",
+                        "cost":  120,
+                        "tag":  "Meal"
+                    },
+                    {
+                        "id":  "r3",
+                        "title":  "Combo Thali at Rs 49",
+                        "venue":  "MAC Canteen",
+                        "cost":  220,
+                        "tag":  "Meal"
+                    },
+                    {
+                        "id":  "r4",
+                        "title":  "Reusable Steel Bottle",
+                        "venue":  "Eco Store",
+                        "cost":  400,
+                        "tag":  "Merch"
+                    },
+                    {
+                        "id":  "r5",
+                        "title":  "Priority Laundry Slot",
+                        "venue":  "Ravindra Bhawan",
+                        "cost":  150,
+                        "tag":  "Service"
+                    },
+                    {
+                        "id":  "r6",
+                        "title":  "Cold Coffee",
+                        "venue":  "Rajiv Canteen",
+                        "cost":  90,
+                        "tag":  "Beverage"
+                    }
+                ]
+}
+
+

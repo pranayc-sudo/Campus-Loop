@@ -1,0 +1,820 @@
+﻿{
+    "ts":  "2026-10-22T17:21:12.412632+00:00",
+    "zones":  [
+                  {
+                      "id":  "Z01",
+                      "name":  "Thomason Main Bldg",
+                      "type":  "Academic",
+                      "x":  470,
+                      "y":  240,
+                      "bins":  6,
+                      "base_kg":  38,
+                      "fill":  37.7,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z01-B01",
+                                          "fill":  36.4,
+                                          "distance_cm":  76.3,
+                                          "battery":  44.4,
+                                          "rssi":  -92,
+                                          "temp_c":  33.9,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z01-B02",
+                                          "fill":  36.9,
+                                          "distance_cm":  75.7,
+                                          "battery":  43.9,
+                                          "rssi":  -92,
+                                          "temp_c":  34.0,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z01-B03",
+                                          "fill":  37.4,
+                                          "distance_cm":  75.1,
+                                          "battery":  43.3,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z01-B04",
+                                          "fill":  38.0,
+                                          "distance_cm":  74.5,
+                                          "battery":  42.8,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z01-B05",
+                                          "fill":  38.5,
+                                          "distance_cm":  73.8,
+                                          "battery":  42.2,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z01-B06",
+                                          "fill":  39.0,
+                                          "distance_cm":  73.2,
+                                          "battery":  41.7,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  47.7
+                  },
+                  {
+                      "id":  "Z02",
+                      "name":  "MG Central Library",
+                      "type":  "Academic",
+                      "x":  320,
+                      "y":  210,
+                      "bins":  4,
+                      "base_kg":  22,
+                      "fill":  47.2,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z02-B01",
+                                          "fill":  46.5,
+                                          "distance_cm":  64.2,
+                                          "battery":  43.9,
+                                          "rssi":  -92,
+                                          "temp_c":  34.0,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z02-B02",
+                                          "fill":  47.0,
+                                          "distance_cm":  63.6,
+                                          "battery":  43.4,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z02-B03",
+                                          "fill":  47.5,
+                                          "distance_cm":  63.0,
+                                          "battery":  42.8,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z02-B04",
+                                          "fill":  48.0,
+                                          "distance_cm":  62.4,
+                                          "battery":  42.3,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  27.6
+                  },
+                  {
+                      "id":  "Z03",
+                      "name":  "Lecture Hall Complex (LHC)",
+                      "type":  "Academic",
+                      "x":  650,
+                      "y":  160,
+                      "bins":  8,
+                      "base_kg":  46,
+                      "fill":  43.3,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z03-B01",
+                                          "fill":  56.6,
+                                          "distance_cm":  52.1,
+                                          "battery":  43.4,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B02",
+                                          "fill":  57.1,
+                                          "distance_cm":  51.5,
+                                          "battery":  42.9,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B03",
+                                          "fill":  57.6,
+                                          "distance_cm":  50.9,
+                                          "battery":  42.3,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B04",
+                                          "fill":  58.1,
+                                          "distance_cm":  50.3,
+                                          "battery":  41.8,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B05",
+                                          "fill":  58.6,
+                                          "distance_cm":  49.6,
+                                          "battery":  41.2,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B06",
+                                          "fill":  19.3,
+                                          "distance_cm":  96.9,
+                                          "battery":  95.7,
+                                          "rssi":  -61,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B07",
+                                          "fill":  19.6,
+                                          "distance_cm":  96.5,
+                                          "battery":  95.1,
+                                          "rssi":  -62,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z03-B08",
+                                          "fill":  19.8,
+                                          "distance_cm":  96.2,
+                                          "battery":  94.6,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  57.8
+                  },
+                  {
+                      "id":  "Z04",
+                      "name":  "Ravindra Bhawan",
+                      "type":  "Residential",
+                      "x":  180,
+                      "y":  360,
+                      "bins":  10,
+                      "base_kg":  92,
+                      "fill":  44.7,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z04-B01",
+                                          "fill":  66.6,
+                                          "distance_cm":  40.0,
+                                          "battery":  42.9,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z04-B02",
+                                          "fill":  67.2,
+                                          "distance_cm":  39.4,
+                                          "battery":  42.4,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z04-B03",
+                                          "fill":  67.7,
+                                          "distance_cm":  38.8,
+                                          "battery":  41.8,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z04-B04",
+                                          "fill":  68.2,
+                                          "distance_cm":  38.2,
+                                          "battery":  41.3,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z04-B05",
+                                          "fill":  28.9,
+                                          "distance_cm":  85.4,
+                                          "battery":  95.7,
+                                          "rssi":  -61,
+                                          "temp_c":  26.4,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z04-B06",
+                                          "fill":  29.1,
+                                          "distance_cm":  85.0,
+                                          "battery":  95.2,
+                                          "rssi":  -62,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z04-B07",
+                                          "fill":  29.4,
+                                          "distance_cm":  84.7,
+                                          "battery":  94.6,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z04-B08",
+                                          "fill":  29.7,
+                                          "distance_cm":  84.4,
+                                          "battery":  94.1,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z04-B09",
+                                          "fill":  30.0,
+                                          "distance_cm":  84.0,
+                                          "battery":  93.5,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z04-B10",
+                                          "fill":  30.2,
+                                          "distance_cm":  83.7,
+                                          "battery":  93.0,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  115.6
+                  },
+                  {
+                      "id":  "Z05",
+                      "name":  "Govind Bhawan",
+                      "type":  "Residential",
+                      "x":  290,
+                      "y":  460,
+                      "bins":  10,
+                      "base_kg":  88,
+                      "fill":  50.6,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z05-B01",
+                                          "fill":  76.7,
+                                          "distance_cm":  28.0,
+                                          "battery":  42.4,
+                                          "rssi":  -93,
+                                          "temp_c":  34.2,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z05-B02",
+                                          "fill":  77.2,
+                                          "distance_cm":  27.3,
+                                          "battery":  41.9,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z05-B03",
+                                          "fill":  77.7,
+                                          "distance_cm":  26.7,
+                                          "battery":  41.3,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z05-B04",
+                                          "fill":  38.4,
+                                          "distance_cm":  73.9,
+                                          "battery":  95.8,
+                                          "rssi":  -61,
+                                          "temp_c":  26.4,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B05",
+                                          "fill":  38.7,
+                                          "distance_cm":  73.6,
+                                          "battery":  95.2,
+                                          "rssi":  -62,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B06",
+                                          "fill":  39.0,
+                                          "distance_cm":  73.2,
+                                          "battery":  94.7,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B07",
+                                          "fill":  39.3,
+                                          "distance_cm":  72.9,
+                                          "battery":  94.1,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B08",
+                                          "fill":  39.5,
+                                          "distance_cm":  72.6,
+                                          "battery":  93.6,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B09",
+                                          "fill":  39.8,
+                                          "distance_cm":  72.2,
+                                          "battery":  93.0,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z05-B10",
+                                          "fill":  40.1,
+                                          "distance_cm":  71.9,
+                                          "battery":  92.5,
+                                          "rssi":  -63,
+                                          "temp_c":  26.9,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  110.6
+                  },
+                  {
+                      "id":  "Z06",
+                      "name":  "MAC Canteen",
+                      "type":  "Food",
+                      "x":  490,
+                      "y":  390,
+                      "bins":  7,
+                      "base_kg":  120,
+                      "fill":  37.0,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z06-B01",
+                                          "fill":  64.2,
+                                          "distance_cm":  43.0,
+                                          "battery":  41.9,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B02",
+                                          "fill":  64.7,
+                                          "distance_cm":  42.4,
+                                          "battery":  41.4,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B03",
+                                          "fill":  25.4,
+                                          "distance_cm":  89.5,
+                                          "battery":  95.8,
+                                          "rssi":  -61,
+                                          "temp_c":  26.4,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B04",
+                                          "fill":  25.7,
+                                          "distance_cm":  89.2,
+                                          "battery":  95.3,
+                                          "rssi":  -61,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B05",
+                                          "fill":  26.0,
+                                          "distance_cm":  88.8,
+                                          "battery":  94.7,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B06",
+                                          "fill":  26.2,
+                                          "distance_cm":  88.5,
+                                          "battery":  94.2,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z06-B07",
+                                          "fill":  26.5,
+                                          "distance_cm":  88.2,
+                                          "battery":  93.6,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  150.8
+                  },
+                  {
+                      "id":  "Z07",
+                      "name":  "Rajiv Canteen",
+                      "type":  "Food",
+                      "x":  680,
+                      "y":  350,
+                      "bins":  6,
+                      "base_kg":  104,
+                      "fill":  48.6,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z07-B01",
+                                          "fill":  74.2,
+                                          "distance_cm":  30.9,
+                                          "battery":  41.4,
+                                          "rssi":  -94,
+                                          "temp_c":  34.3,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z07-B02",
+                                          "fill":  74.8,
+                                          "distance_cm":  30.3,
+                                          "battery":  40.9,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z07-B03",
+                                          "fill":  35.3,
+                                          "distance_cm":  77.7,
+                                          "battery":  95.3,
+                                          "rssi":  -61,
+                                          "temp_c":  26.5,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z07-B04",
+                                          "fill":  35.5,
+                                          "distance_cm":  77.4,
+                                          "battery":  94.8,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z07-B05",
+                                          "fill":  35.8,
+                                          "distance_cm":  77.0,
+                                          "battery":  94.2,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z07-B06",
+                                          "fill":  36.1,
+                                          "distance_cm":  76.7,
+                                          "battery":  93.7,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  130.7
+                  },
+                  {
+                      "id":  "Z08",
+                      "name":  "IITR Hospital",
+                      "type":  "Medical",
+                      "x":  850,
+                      "y":  220,
+                      "bins":  3,
+                      "base_kg":  14,
+                      "fill":  77.4,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z08-B01",
+                                          "fill":  97.0,
+                                          "distance_cm":  3.6,
+                                          "battery":  40.9,
+                                          "rssi":  -94,
+                                          "temp_c":  34.4,
+                                          "status":  "critical"
+                                      },
+                                      {
+                                          "id":  "Z08-B02",
+                                          "fill":  67.4,
+                                          "distance_cm":  39.1,
+                                          "battery":  95.4,
+                                          "rssi":  -61,
+                                          "temp_c":  26.5,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z08-B03",
+                                          "fill":  67.7,
+                                          "distance_cm":  38.8,
+                                          "battery":  94.8,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "warning"
+                                      }
+                                  ],
+                      "status":  "warning",
+                      "today_kg":  17.6
+                  },
+                  {
+                      "id":  "Z09",
+                      "name":  "LBS Sports Stadium",
+                      "type":  "Recreation",
+                      "x":  800,
+                      "y":  460,
+                      "bins":  5,
+                      "base_kg":  30,
+                      "fill":  77.5,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z09-B01",
+                                          "fill":  76.9,
+                                          "distance_cm":  27.7,
+                                          "battery":  95.4,
+                                          "rssi":  -61,
+                                          "temp_c":  26.5,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z09-B02",
+                                          "fill":  77.2,
+                                          "distance_cm":  27.3,
+                                          "battery":  94.9,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z09-B03",
+                                          "fill":  77.5,
+                                          "distance_cm":  27.0,
+                                          "battery":  94.3,
+                                          "rssi":  -62,
+                                          "temp_c":  26.6,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z09-B04",
+                                          "fill":  77.8,
+                                          "distance_cm":  26.7,
+                                          "battery":  93.8,
+                                          "rssi":  -62,
+                                          "temp_c":  26.7,
+                                          "status":  "warning"
+                                      },
+                                      {
+                                          "id":  "Z09-B05",
+                                          "fill":  78.1,
+                                          "distance_cm":  26.3,
+                                          "battery":  93.2,
+                                          "rssi":  -62,
+                                          "temp_c":  26.8,
+                                          "status":  "warning"
+                                      }
+                                  ],
+                      "status":  "warning",
+                      "today_kg":  37.7
+                  },
+                  {
+                      "id":  "Z10",
+                      "name":  "Convocation Hall",
+                      "type":  "Events",
+                      "x":  770,
+                      "y":  150,
+                      "bins":  4,
+                      "base_kg":  26,
+                      "fill":  47.1,
+                      "sensors":  [
+                                      {
+                                          "id":  "Z10-B01",
+                                          "fill":  46.4,
+                                          "distance_cm":  64.3,
+                                          "battery":  44.5,
+                                          "rssi":  -92,
+                                          "temp_c":  33.9,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z10-B02",
+                                          "fill":  46.9,
+                                          "distance_cm":  63.7,
+                                          "battery":  43.9,
+                                          "rssi":  -92,
+                                          "temp_c":  34.0,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z10-B03",
+                                          "fill":  47.4,
+                                          "distance_cm":  63.1,
+                                          "battery":  43.4,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      },
+                                      {
+                                          "id":  "Z10-B04",
+                                          "fill":  47.9,
+                                          "distance_cm":  62.5,
+                                          "battery":  42.8,
+                                          "rssi":  -93,
+                                          "temp_c":  34.1,
+                                          "status":  "ok"
+                                      }
+                                  ],
+                      "status":  "ok",
+                      "today_kg":  32.7
+                  }
+              ],
+    "routes":  {
+                   "depot":  {
+                                 "id":  "DEPOT",
+                                 "name":  "MRF Waste Depot",
+                                 "x":  500,
+                                 "y":  550
+                             },
+                   "scheduled":  {
+                                     "path":  [
+                                                  {
+                                                      "id":  "DEPOT",
+                                                      "x":  500,
+                                                      "y":  550
+                                                  },
+                                                  {
+                                                      "id":  "Z01",
+                                                      "x":  470,
+                                                      "y":  240
+                                                  },
+                                                  {
+                                                      "id":  "Z02",
+                                                      "x":  320,
+                                                      "y":  210
+                                                  },
+                                                  {
+                                                      "id":  "Z03",
+                                                      "x":  650,
+                                                      "y":  160
+                                                  },
+                                                  {
+                                                      "id":  "Z04",
+                                                      "x":  180,
+                                                      "y":  360
+                                                  },
+                                                  {
+                                                      "id":  "Z05",
+                                                      "x":  290,
+                                                      "y":  460
+                                                  },
+                                                  {
+                                                      "id":  "Z06",
+                                                      "x":  490,
+                                                      "y":  390
+                                                  },
+                                                  {
+                                                      "id":  "Z07",
+                                                      "x":  680,
+                                                      "y":  350
+                                                  },
+                                                  {
+                                                      "id":  "Z08",
+                                                      "x":  850,
+                                                      "y":  220
+                                                  },
+                                                  {
+                                                      "id":  "Z09",
+                                                      "x":  800,
+                                                      "y":  460
+                                                  },
+                                                  {
+                                                      "id":  "Z10",
+                                                      "x":  770,
+                                                      "y":  150
+                                                  },
+                                                  {
+                                                      "id":  "DEPOT",
+                                                      "x":  500,
+                                                      "y":  550
+                                                  }
+                                              ],
+                                     "km":  47.49,
+                                     "stops":  10,
+                                     "km_day":  190.0,
+                                     "co2_kg_day":  51.29,
+                                     "minutes":  325
+                                 },
+                   "optimized":  {
+                                     "path":  [
+                                                  {
+                                                      "id":  "DEPOT",
+                                                      "x":  500,
+                                                      "y":  550
+                                                  },
+                                                  {
+                                                      "id":  "Z09",
+                                                      "x":  800,
+                                                      "y":  460
+                                                  },
+                                                  {
+                                                      "id":  "Z08",
+                                                      "x":  850,
+                                                      "y":  220
+                                                  },
+                                                  {
+                                                      "id":  "DEPOT",
+                                                      "x":  500,
+                                                      "y":  550
+                                                  }
+                                              ],
+                                     "km":  14.15,
+                                     "stops":  2,
+                                     "km_day":  56.6,
+                                     "co2_kg_day":  15.28,
+                                     "minutes":  93
+                                 },
+                   "savings_pct":  70.2
+               }
+}
+

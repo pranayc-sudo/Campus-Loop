@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="1024" height="1024">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&amp;family=Outfit:wght@800;900&amp;display=swap');
+      .brand-title { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 800; font-size: 96px; letter-spacing: -2px; text-anchor: middle; }
+      .brand-sub { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 20px; letter-spacing: 0.3em; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="800" height="800" rx="48" fill="#090A0C" />
+  <rect x="24" y="24" width="752" height="752" rx="36" fill="none" stroke="#22262B" stroke-width="3" />
+  <!-- Center Icon -->
+  <g transform="translate(260, 140)">
+    <rect x="0" y="0" width="280" height="280" rx="28" fill="#121418" stroke="#22262B" stroke-width="4" />
+    <path d="M 70 140 A 70 70 0 1 1 140 210" fill="none" stroke="#D1FF4D" stroke-width="26" stroke-linecap="square" />
+    <rect x="52" y="175" width="54" height="54" rx="3" fill="#D1FF4D" />
+  </g>
+  <!-- Typography Centered -->
+  <text x="400" y="530" class="brand-title" fill="#F2F4F7">Campus<tspan fill="#D1FF4D">Loop</tspan></text>
+  <text x="400" y="585" class="brand-sub" fill="#D1FF4D">CAMPUS WASTE INTELLIGENCE</text>
+  <text x="400" y="625" class="brand-sub" fill="#8B949E">AUTONOMOUS CIRCULAR OS</text>
+</svg>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090A0C" />
+    <meta name="description" content="CampusLoop | Campus Waste Intelligence" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>CampusLoop | Operations Console</title>
+    <!-- Standalone offline API engine -->
+    <script src="/mock-api.js"></script>
+    <script>
+      window.tailwind = window.tailwind || {};
+      tailwind.config = {
+        corePlugins: { preflight: false },
+        theme: {
+          extend: {
+            colors: {
+              volt: "#D1FF4D",
+              voltHover: "#B8E635",
+              ink: "#090A0C",
+              surface: "#121418",
+              panel: "#15171C",
+              panelHover: "#1D2128",
+              line: "#22262B",
+              mute: "#8B949E",
+              txt: "#F2F4F7",
+              raised: "#171A20",
+              organic: "#00E676",
+              recyclable: "#00BFFF",
+              reject: "#FF5252"
+            },
+            fontFamily: {
+              display: ["Outfit", "sans-serif"],
+              sans: ["Manrope", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"]
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Normal scrolling body for React application */
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #090A0C;
+        color: #F2F4F7;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto !important;
+      }
+    </style>
+    <script defer src="/static/js/bundle.js"></script>
+  </head>
+  <body class="bg-[#090A0C] text-[#F2F4F7] antialiased selection:bg-[#D1FF4D] selection:text-[#090A0C]">
+    <noscript>You need to enable JavaScript to run CampusLoop.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

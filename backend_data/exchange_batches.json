@@ -1,0 +1,256 @@
+﻿[
+    {
+        "id":  "f0005cb6-9b3f-4195-840f-9e3c0b1c7b3e",
+        "code":  "CL-2608",
+        "material":  "Tetra Packs",
+        "weight_kg":  95,
+        "source_zone":  "MAC Canteen",
+        "price_per_kg":  7,
+        "stage":  "tested",
+        "purity":  91.3,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-21T10:33:43.780689+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-21T10:33:43.780689+00:00"
+                        },
+                        {
+                            "stage":  "tested",
+                            "ts":  "2026-10-22T10:33:43.780689+00:00"
+                        }
+                    ],
+        "trend":  [
+                      6.7,
+                      7.3,
+                      6.4,
+                      7.0,
+                      6.2,
+                      6.7,
+                      7.3
+                  ]
+    },
+    {
+        "id":  "855d4f36-c767-4915-bb6f-ed8cee514b02",
+        "code":  "CL-2607",
+        "material":  "Glass Bottles",
+        "weight_kg":  210,
+        "source_zone":  "Govind Bhawan",
+        "price_per_kg":  4,
+        "stage":  "sold",
+        "purity":  86.7,
+        "buyer":  "Saharanpur Paper Mills",
+        "revenue":  840,
+        "created_at":  "2026-10-20T10:33:43.779583+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-20T10:33:43.779583+00:00"
+                        },
+                        {
+                            "stage":  "tested",
+                            "ts":  "2026-10-21T10:33:43.779583+00:00"
+                        },
+                        {
+                            "stage":  "sold",
+                            "ts":  "2026-10-22T10:33:43.779583+00:00"
+                        }
+                    ],
+        "trend":  [
+                      3.7,
+                      4.0,
+                      3.5,
+                      3.8,
+                      4.2,
+                      3.7,
+                      4.0
+                  ]
+    },
+    {
+        "id":  "64f24e1a-2bc4-4ba3-a80b-f0e570d019fa",
+        "code":  "CL-2606",
+        "material":  "E-waste (cables)",
+        "weight_kg":  36,
+        "source_zone":  "Lecture Hall Complex (LHC)",
+        "price_per_kg":  140,
+        "stage":  "sold",
+        "purity":  93.9,
+        "buyer":  "Doon PolyLoop Pvt Ltd",
+        "revenue":  5040,
+        "created_at":  "2026-10-19T10:33:43.778427+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-19T10:33:43.778427+00:00"
+                        },
+                        {
+                            "stage":  "tested",
+                            "ts":  "2026-10-20T10:33:43.778427+00:00"
+                        },
+                        {
+                            "stage":  "sold",
+                            "ts":  "2026-10-21T10:33:43.778427+00:00"
+                        }
+                    ],
+        "trend":  [
+                      123.2,
+                      134.4,
+                      145.6,
+                      128.8,
+                      140.0,
+                      123.2,
+                      134.4
+                  ]
+    },
+    {
+        "id":  "2e5dd98b-6c89-42f5-889c-b397dac57307",
+        "code":  "CL-2605",
+        "material":  "HDPE Containers",
+        "weight_kg":  128,
+        "source_zone":  "Ravindra Bhawan",
+        "price_per_kg":  28,
+        "stage":  "collected",
+        "purity":  null,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-18T10:33:43.777330+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-18T10:33:43.777330+00:00"
+                        }
+                    ],
+        "trend":  [
+                      29.1,
+                      25.8,
+                      28.0,
+                      24.6,
+                      26.9,
+                      29.1,
+                      25.8
+                  ]
+    },
+    {
+        "id":  "976c4762-eb87-4552-9263-de45f2d4b365",
+        "code":  "CL-2604",
+        "material":  "Mixed Paper",
+        "weight_kg":  410,
+        "source_zone":  "MG Central Library",
+        "price_per_kg":  11,
+        "stage":  "tested",
+        "purity":  86.4,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-17T10:33:43.776042+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-17T10:33:43.776042+00:00"
+                        },
+                        {
+                            "stage":  "tested",
+                            "ts":  "2026-10-18T10:33:43.776042+00:00"
+                        }
+                    ],
+        "trend":  [
+                      11.0,
+                      9.7,
+                      10.6,
+                      11.4,
+                      10.1,
+                      11.0,
+                      9.7
+                  ]
+    },
+    {
+        "id":  "ca69af8f-4604-40fa-b914-5b4ba2c8fcfa",
+        "code":  "CL-2603",
+        "material":  "Aluminium Cans",
+        "weight_kg":  64,
+        "source_zone":  "LBS Sports Stadium",
+        "price_per_kg":  95,
+        "stage":  "tested",
+        "purity":  91.0,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-16T10:33:43.774556+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-16T10:33:43.774556+00:00"
+                        },
+                        {
+                            "stage":  "tested",
+                            "ts":  "2026-10-17T10:33:43.774556+00:00"
+                        }
+                    ],
+        "trend":  [
+                      91.2,
+                      98.8,
+                      87.4,
+                      95.0,
+                      83.6,
+                      91.2,
+                      98.8
+                  ]
+    },
+    {
+        "id":  "78962443-5a60-4d14-b40b-e83733a3f5d5",
+        "code":  "CL-2602",
+        "material":  "Cardboard",
+        "weight_kg":  340,
+        "source_zone":  "MAC Canteen",
+        "price_per_kg":  9,
+        "stage":  "collected",
+        "purity":  null,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-15T10:33:43.772598+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-15T10:33:43.772598+00:00"
+                        }
+                    ],
+        "trend":  [
+                      8.3,
+                      9.0,
+                      7.9,
+                      8.6,
+                      9.4,
+                      8.3,
+                      9.0
+                  ]
+    },
+    {
+        "id":  "82ff8b4e-33dd-4414-bb9a-a5dfd50898a5",
+        "code":  "CL-2601",
+        "material":  "PET Bottles",
+        "weight_kg":  182,
+        "source_zone":  "Rajiv Canteen",
+        "price_per_kg":  22,
+        "stage":  "collected",
+        "purity":  null,
+        "buyer":  null,
+        "revenue":  0,
+        "created_at":  "2026-10-14T10:33:43.748662+00:00",
+        "history":  [
+                        {
+                            "stage":  "collected",
+                            "ts":  "2026-10-14T10:33:43.748662+00:00"
+                        }
+                    ],
+        "trend":  [
+                      19.4,
+                      21.1,
+                      22.9,
+                      20.2,
+                      22.0,
+                      19.4,
+                      21.1
+                  ]
+    }
+]
+
+

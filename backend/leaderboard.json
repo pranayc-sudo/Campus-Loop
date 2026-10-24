@@ -1,0 +1,58 @@
+﻿[
+    {
+        "id":  "c17dc96d-15dd-415f-9941-29abf32411bc",
+        "name":  "Aarav Mehta",
+        "credits":  1240,
+        "hostel":  "Ravindra Bhawan"
+    },
+    {
+        "id":  "c39f52a5-5ed4-405d-a35d-4c11e3346268",
+        "name":  "Ishita Rao",
+        "credits":  1105,
+        "hostel":  "Govind Bhawan"
+    },
+    {
+        "id":  "c657d83b-c496-427d-8b23-544e3c998c51",
+        "name":  "Kabir Singh",
+        "credits":  980,
+        "hostel":  "Ravindra Bhawan"
+    },
+    {
+        "id":  "09b63d14-4b8c-4c51-9a21-2aa9b97e3a01",
+        "name":  "Ananya Iyer",
+        "credits":  865,
+        "hostel":  "Govind Bhawan"
+    },
+    {
+        "id":  "705ef5b9-a26b-4ae7-9e9e-b9a7edd3a1c3",
+        "name":  "Rohan Gupta",
+        "credits":  720,
+        "hostel":  "Ravindra Bhawan"
+    },
+    {
+        "id":  "dc7e7c7e-f69b-40d4-aeb7-ce433a1d7043",
+        "name":  "Meera Nair",
+        "credits":  640,
+        "hostel":  "Govind Bhawan"
+    },
+    {
+        "id":  "621541ca-32fc-4064-9422-cdd58260b8ee",
+        "name":  "Vihaan Joshi",
+        "credits":  515,
+        "hostel":  "Ravindra Bhawan"
+    },
+    {
+        "id":  "c24b0548-3105-44c9-b132-83e4f81038be",
+        "name":  "Saanvi Das",
+        "credits":  430,
+        "hostel":  "Govind Bhawan"
+    },
+    {
+        "id":  "c6a35c71-a7cc-4f92-8ab5-2de9856e0148",
+        "name":  "Demo Student",
+        "credits":  135,
+        "hostel":  "Govind Bhawan"
+    }
+]
+
+

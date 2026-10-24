@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusLoop â€” Brand & Logo Asset Kit (Sociothon 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@700;800;900&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #090A0C;
+    --surface: #121418;
+    --raised: #1A1D23;
+    --line: #22262B;
+    --volt: #D1FF4D;
+    --org: #00E676;
+    --txt: #F2F4F7;
+    --mute: #8B949E;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--ink);
+    color: var(--txt);
+    font-family: 'Manrope', -apple-system, sans-serif;
+    padding: 40px 24px 80px;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    color: var(--volt);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+  }
+  h1 span { color: var(--volt); }
+  .subtitle {
+    color: var(--mute);
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  .palette-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+  .chip-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+  }
+  .section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .card:hover {
+    border-color: rgba(209,255,77,0.5);
+    transform: translateY(-2px);
+  }
+  .card-preview {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .card-preview.checkerboard {
+    background-image: 
+      linear-gradient(45deg, #181c22 25%, transparent 25%), 
+      linear-gradient(-45deg, #181c22 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, #181c22 75%), 
+      linear-gradient(-45deg, transparent 75%, #181c22 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-color: #0d1014;
+  }
+  .card-preview.light {
+    background: #FFFFFF;
+  }
+  .card-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--mute);
+    margin: 6px 0 12px;
+  }
+  .card-desc {
+    font-size: 13px;
+    color: #CBD5E1;
+    margin-bottom: 16px;
+    flex: 1;
+  }
+  .card-actions {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-primary {
+    background: var(--volt);
+    color: var(--ink);
+  }
+  .btn-primary:hover {
+    background: #c2f53d;
+  }
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--txt);
+  }
+  .btn-secondary:hover {
+    background: var(--raised);
+    border-color: var(--mute);
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: rgba(209,255,77,0.1);
+    color: var(--volt);
+    border: 1px solid rgba(209,255,77,0.3);
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div>
+      <div class="kicker">Sociothon 2026 â€¢ Requirements Kit</div>
+      <h1>Campus<span>Loop</span> Assets</h1>
+      <p class="subtitle">Complete vector SVGs and high-resolution PNGs ready for submission portal upload</p>
+    </div>
+    <div class="palette-bar">
+      <div class="chip"><div class="chip-color" style="background:#090A0C; border:1px solid #22262B;"></div>Obsidian #090A0C</div>
+      <div class="chip"><div class="chip-color" style="background:#D1FF4D;"></div>Neon Volt #D1FF4D</div>
+      <div class="chip"><div class="chip-color" style="background:#00E676;"></div>Organic #00E676</div>
+      <div class="chip"><div class="chip-color" style="background:#22262B;"></div>Hairline #22262B</div>
+    </div>
+  </header>
+
+  <div class="section-title">01 / Primary Submission Logos (Square 1:1)</div>
+  <div class="grid">
+    
+    <!-- 1. Square Icon Dark -->
+    <div class="card">
+      <div class="card-preview">
+        <img src="campusloop_icon_square_1024x1024.png" alt="CampusLoop Icon Dark">
+      </div>
+      <div class="card-body">
+        <span class="tag">Recommended for Portal Avatar</span>
+        <div class="card-title">Square App Icon (Dark Obsidian)</div>
+        <div class="card-meta">PNG â€¢ 1024 Ã— 1024 px</div>
+        <div class="card-desc">Standard 1:1 project avatar on obsidian canvas with hairline border and volt loop. Perfect for form uploads requiring a square project logo.</div>
+        <div class="card-actions">
+          <a href="campusloop_icon_square_1024x1024.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_icon_dark.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Square Icon Transparent -->
+    <div class="card">
+      <div class="card-preview checkerboard">
+        <img src="campusloop_icon_transparent_1024x1024.png" alt="CampusLoop Icon Transparent">
+      </div>
+      <div class="card-body">
+        <span class="tag">Alpha Channel Transparent</span>
+        <div class="card-title">Square App Icon (Transparent)</div>
+        <div class="card-meta">PNG â€¢ 1024 Ã— 1024 px</div>
+        <div class="card-desc">1:1 square icon with true transparent background. Easily overlaid on light, dark, or gradient backgrounds in slides and pitch decks.</div>
+        <div class="card-actions">
+          <a href="campusloop_icon_transparent_1024x1024.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_icon_transparent.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Tactical Badge -->
+    <div class="card">
+      <div class="card-preview">
+        <img src="campusloop_logo_square_badge_1024x1024.png" alt="CampusLoop Tactical Badge">
+      </div>
+      <div class="card-body">
+        <span class="tag">High-Tech Blueprint</span>
+        <div class="card-title">Instrument-Grade Badge</div>
+        <div class="card-meta">PNG â€¢ 1024 Ã— 1024 px</div>
+        <div class="card-desc">Features corner alignment ticks, status indicator (SYS / ONLINE), radial volt glow, and subtitle CAMPUSLOOP â€¢ OS 1.0.</div>
+        <div class="card-actions">
+          <a href="campusloop_logo_square_badge_1024x1024.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_icon_square_badge.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Stacked Lockup Dark -->
+    <div class="card">
+      <div class="card-preview">
+        <img src="campusloop_logo_stacked_dark_1024x1024.png" alt="CampusLoop Stacked Logo">
+      </div>
+      <div class="card-body">
+        <span class="tag">All-In-One Lockup</span>
+        <div class="card-title">Centered Stacked Brand Lockup</div>
+        <div class="card-meta">PNG â€¢ 1024 Ã— 1024 px</div>
+        <div class="card-desc">Icon mark above, CampusLoop display typography in the center, and Waste Intelligence subtitle below.</div>
+        <div class="card-actions">
+          <a href="campusloop_logo_stacked_dark_1024x1024.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_logo_stacked_dark.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-title">02 / Horizontal Lockups & Banners (Landscape)</div>
+  <div class="grid">
+    
+    <!-- 5. Horizontal Dark -->
+    <div class="card" style="grid-column: span 2;">
+      <div class="card-preview" style="height: 240px;">
+        <img src="campusloop_logo_horizontal_dark_1600x500.png" alt="CampusLoop Horizontal Dark">
+      </div>
+      <div class="card-body">
+        <span class="tag">Primary Brand Lockup</span>
+        <div class="card-title">Horizontal Brand Lockup (Dark Obsidian)</div>
+        <div class="card-meta">PNG â€¢ 1600 Ã— 500 px</div>
+        <div class="card-desc">The official brand signature lockup featuring the icon box, bold Outfit typography, and JetBrains Mono OS descriptor. Includes live node status pill.</div>
+        <div class="card-actions">
+          <a href="campusloop_logo_horizontal_dark_1600x500.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_logo_horizontal_dark.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Horizontal Transparent -->
+    <div class="card">
+      <div class="card-preview checkerboard">
+        <img src="campusloop_logo_horizontal_transparent_1600x500.png" alt="CampusLoop Horizontal Transparent">
+      </div>
+      <div class="card-body">
+        <span class="tag">Navbar & Header Ready</span>
+        <div class="card-title">Horizontal Lockup (Transparent)</div>
+        <div class="card-meta">PNG â€¢ 1600 Ã— 500 px</div>
+        <div class="card-desc">Transparent lockup with no enclosing frame for seamless placement directly on web headers, navigation bars, or video intros.</div>
+        <div class="card-actions">
+          <a href="campusloop_logo_horizontal_transparent_1600x500.png" download class="btn btn-primary">Download PNG</a>
+          <a href="campusloop_logo_horizontal_transparent.svg" download class="btn btn-secondary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Banner Card -->
+    <div class="card">
+      <div class="card-preview">
+        <img src="campusloop_banner_card_1200x630.png" alt="CampusLoop Social Banner">
+      </div>
+      <div class="card-body">
+        <span class="tag">Sociothon Cover Card</span>
+        <div class="card-title">Presentation Cover Card (1200 Ã— 630)</div>
+        <div class="card-meta">PNG â€¢ 1200 Ã— 630 px (Standard 1.91:1)</div>
+        <div class="card-desc">Submission card containing the headline, live IoT metrics (63 online nodes, 88.4% diversion target), and live app link.</div>
+        <div class="card-actions">
+          <a href="campusloop_banner_card_1200x630.png" download class="btn btn-primary">Download PNG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Display Hero Wordmark -->
+    <div class="card">
+      <div class="card-preview">
+        <img src="campusloop_wordmark_hero_1600x600.png" alt="CampusLoop Hero Wordmark">
+      </div>
+      <div class="card-body">
+        <span class="tag">Dual-Tone Typography</span>
+        <div class="card-title">Display Wordmark (CAMPUS LOOP)</div>
+        <div class="card-meta">PNG â€¢ 1600 Ã— 600 px</div>
+        <div class="card-desc">The high-impact headline wordmark from the landing page: CAMPUS in Volt and LOOP in White on hairline grid canvas.</div>
+        <div class="card-actions">
+          <a href="campusloop_wordmark_hero_1600x600.png" download class="btn btn-primary">Download PNG</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Light Mode Logo -->
+    <div class="card">
+      <div class="card-preview light">
+        <img src="campusloop_logo_light.svg" alt="CampusLoop Light Mode">
+      </div>
+      <div class="card-body">
+        <span class="tag">White Portal Compatible</span>
+        <div class="card-title">Light Mode Lockup</div>
+        <div class="card-meta">Vector SVG â€¢ 1200 Ã— 360 px</div>
+        <div class="card-desc">For submission forms or printed documents that have a white background, with dark text and organic green accent.</div>
+        <div class="card-actions">
+          <a href="campusloop_logo_light.svg" download class="btn btn-primary">Vector SVG</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

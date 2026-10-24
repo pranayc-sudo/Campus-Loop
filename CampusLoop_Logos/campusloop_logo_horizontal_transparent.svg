@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&amp;family=Outfit:wght@800;900&amp;display=swap');
+      .brand-title { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 800; font-size: 112px; letter-spacing: -2px; }
+      .brand-sub { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 21px; letter-spacing: 0.28em; }
+    </style>
+  </defs>
+  <g transform="translate(90, 80)">
+    <rect x="0" y="0" width="180" height="180" rx="18" fill="#121418" stroke="#22262B" stroke-width="3" />
+    <path d="M 45 90 A 45 45 0 1 1 90 135" fill="none" stroke="#D1FF4D" stroke-width="17" stroke-linecap="square" />
+    <rect x="34" y="112" width="34" height="34" rx="2" fill="#D1FF4D" />
+  </g>
+  <g transform="translate(320, 195)">
+    <text class="brand-title" fill="#F2F4F7">Campus<tspan fill="#D1FF4D">Loop</tspan></text>
+    <text class="brand-sub" y="52" fill="#D1FF4D">CAMPUS WASTE INTELLIGENCE / CIRCULAR ECONOMY OS</text>
+  </g>
+</svg>
