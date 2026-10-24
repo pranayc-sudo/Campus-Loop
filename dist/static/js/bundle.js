@@ -8549,7 +8549,6 @@ function Roi() {
             }, void 0, false)]
           }, void 0, true)]
         }, void 0, true)]
-        }, void 0, true)]
       }, void 0, true), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxDEV)(_components_kit__WEBPACK_IMPORTED_MODULE_9__.Panel, {
         className: "xl:col-span-2 col-span-full p-5 sm:p-6 border border-line bg-ink mt-4",
         "data-testid": "implementation-roadmap",
