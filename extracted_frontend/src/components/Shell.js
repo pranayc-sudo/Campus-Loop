@@ -73,7 +73,7 @@ function Nav({ onNavigate }) {
 function UserBlock() {
   const { user, logout } = useAuth();
   return (
-    <div className="border-t border-line p-5 flex items-center justify-between gap-3">
+    <div className="border-t border-line p-5 flex items-center justify-between gap-3 shrink-0">
       <div className="min-w-0">
         <div className="text-sm font-semibold truncate" data-testid="sidebar-user-name">{user.name}</div>
         <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-volt" data-testid="sidebar-user-role">{user.role}</div>
@@ -95,22 +95,22 @@ export default function Shell() {
 
   return (
     <div className="min-h-screen flex bg-ink">
-      <aside className="hidden lg:flex w-64 shrink-0 flex-col border-r border-line bg-ink sticky top-0 h-screen">
-        <div className="h-16 flex items-center px-6 border-b border-line"><Logo /></div>
+      <aside className="hidden lg:flex w-64 shrink-0 flex-col border-r border-line bg-ink fixed inset-y-0 left-0 z-30 h-screen">
+        <div className="h-16 flex items-center px-6 border-b border-line shrink-0"><Logo /></div>
         <div className="flex-1 overflow-y-auto"><Nav /></div>
         <UserBlock />
       </aside>
       {open && (
         <div className="lg:hidden fixed inset-0 z-50 bg-ink/95 backdrop-blur-xl flex flex-col" data-testid="mobile-nav">
-          <div className="h-16 flex items-center justify-between px-6 border-b border-line">
+          <div className="h-16 flex items-center justify-between px-6 border-b border-line shrink-0">
             <Logo />
             <button onClick={() => setOpen(false)} data-testid="mobile-nav-close" className="p-2 border border-line"><X size={16} /></button>
           </div>
-          <div className="flex-1"><Nav onNavigate={() => setOpen(false)} /></div>
+          <div className="flex-1 overflow-y-auto"><Nav onNavigate={() => setOpen(false)} /></div>
           <UserBlock />
         </div>
       )}
-      <div className="flex-1 min-w-0 flex flex-col">
+      <div className="flex-1 min-w-0 flex flex-col lg:pl-64">
         <header className="h-16 sticky top-0 z-40 bg-ink/90 backdrop-blur-xl border-b border-line flex items-center justify-between px-4 sm:px-8">
           <div className="flex items-center gap-4">
             <button className="lg:hidden p-2 border border-line" onClick={() => setOpen(true)} data-testid="mobile-nav-open"><Menu size={16} /></button>

@@ -730,7 +730,7 @@ function UserBlock() {
     logout
   } = (0,_context_Auth__WEBPACK_IMPORTED_MODULE_13__.useAuth)();
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-    className: "border-t border-line p-5 flex items-center justify-between gap-3",
+    className: "border-t border-line p-5 flex items-center justify-between gap-3 shrink-0",
     "x-file-name": "Shell",
     "x-line-number": "68",
     "x-column": "4",
@@ -844,7 +844,7 @@ function Shell() {
     "x-source-type": "computed",
     "x-source-editable": "false",
     children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("aside", {
-      className: "hidden lg:flex w-64 shrink-0 flex-col border-r border-line bg-ink sticky top-0 h-screen",
+      className: "hidden lg:flex w-64 shrink-0 flex-col border-r border-line bg-ink fixed inset-y-0 left-0 z-30 h-screen",
       "x-file-name": "Shell",
       "x-line-number": "90",
       "x-column": "6",
@@ -852,7 +852,7 @@ function Shell() {
       "x-id": "Shell_90_6",
       "x-dynamic": "false",
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-        className: "h-16 flex items-center px-6 border-b border-line",
+        className: "h-16 flex items-center px-6 border-b border-line shrink-0",
         "x-file-name": "Shell",
         "x-line-number": "91",
         "x-column": "8",
@@ -925,7 +925,7 @@ function Shell() {
       "x-id": "Shell_96_8",
       "x-dynamic": "false",
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-        className: "h-16 flex items-center justify-between px-6 border-b border-line",
+        className: "h-16 flex items-center justify-between px-6 border-b border-line shrink-0",
         "x-file-name": "Shell",
         "x-line-number": "97",
         "x-column": "10",
@@ -1011,7 +1011,7 @@ function Shell() {
       lineNumber: 96,
       columnNumber: 9
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-      className: "flex-1 min-w-0 flex flex-col",
+      className: "flex-1 min-w-0 flex flex-col lg:pl-64",
       "x-file-name": "Shell",
       "x-line-number": "105",
       "x-column": "6",
