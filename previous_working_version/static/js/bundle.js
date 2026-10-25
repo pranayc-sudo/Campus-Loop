@@ -4246,7 +4246,7 @@ function Exchange() {
       lineNumber: 112,
       columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-      className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+      className: "grid grid-cols-1 md:grid-cols-3 gap-4 items-start",
       "x-file-name": "Exchange",
       "x-line-number": "119",
       "x-column": "6",
@@ -4354,7 +4354,7 @@ function Exchange() {
             lineNumber: 125,
             columnNumber: 15
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_15__.jsxDEV)("div", {
-            className: "p-3 space-y-3 flex-1 min-h-[200px]",
+            className: "p-3 space-y-3",
             "x-file-name": "Exchange",
             "x-line-number": "129",
             "x-column": "14",

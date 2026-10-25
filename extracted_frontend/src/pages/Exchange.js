@@ -148,7 +148,7 @@ export default function Exchange() {
           </div>
         ))}
       </Panel>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
         {STAGES.map((st) => {
           const items = list.filter((b) => b.stage === st.key);
           const Icon = st.icon;
@@ -158,7 +158,7 @@ export default function Exchange() {
                 <span className="flex items-center gap-2 font-semibold"><Icon size={16} style={{ color: st.color }} />{st.label}</span>
                 <span className="font-mono text-xs text-mute">{items.length}</span>
               </div>
-              <div className="p-3 space-y-3 flex-1 min-h-[200px]">{items.map((b) => <BatchCard key={b.id} b={b} stage={st} isAdmin={isAdmin} onAdvance={advance} />)}</div>
+              <div className="p-3 space-y-3">{items.map((b) => <BatchCard key={b.id} b={b} stage={st} isAdmin={isAdmin} onAdvance={advance} />)}</div>
             </Panel>
           );
         })}
